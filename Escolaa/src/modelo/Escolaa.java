@@ -14,6 +14,8 @@ public class Escolaa {
     private String nome;
     private String endereco;
     private String sigla;
+    private int nr_alunos;
+    private double area;
 
     public int getCodigo() {
         return codigo;
@@ -47,9 +49,26 @@ public class Escolaa {
         this.sigla = sigla;
     }
 
+    public int getNr_alunos() {
+        return nr_alunos;
+    }
+
+    public void setNr_alunos(int nr_alunos) {
+        this.nr_alunos = nr_alunos;
+    }
+
+    public double getArea() {
+        return area;
+    }
+
+    public void setArea(double area) {
+        this.area = area;
+    }
+
     @Override
     public String toString() {
         return "Escolaa{" + "sigla=" + sigla + '}';
     }
+
     
 }

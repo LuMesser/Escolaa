@@ -22,6 +22,8 @@ public class ControladorEscolaa {
         objeto.setNome(man.jtfNome.getText());
         objeto.setEndereco(man.jtfEndereco.getText());
         objeto.setSigla(man.jtfSigla.getText());
+        objeto.setNr_alunos(Integer.parseInt(man.jtfCodigo.getText()));
+        objeto.setArea(Double.parseDouble(man.jtfArea.getText()));
         
         boolean resultado = DaoEscolaa.inserir(objeto);
         if (resultado) {
@@ -38,6 +40,8 @@ public class ControladorEscolaa {
         objeto.setNome(man.jtfNome.getText());
         objeto.setEndereco(man.jtfEndereco.getText());
         objeto.setSigla(man.jtfSigla.getText());
+        objeto.setNr_alunos(Integer.parseInt(man.jtfNr_alunos.getText()));
+        objeto.setArea(Double.parseDouble(man.jtfArea.getText()));
         
         boolean resultado = DaoEscolaa.alterar(objeto);
         if (resultado) {
